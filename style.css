@@ -219,11 +219,12 @@ main{
 /* =============================== */
 
 footer{
+    margin-top: 30px;
     width: 100%;
     background-color: black;
 }
 .footer-container{
-    width: 50%;
+    width: 70%;
     height: 30vh;
     margin: 0 auto;
 }
@@ -253,4 +254,43 @@ footer{
     background-color: #636e72;
     text-decoration: none;
     margin: 7px;
+}
+
+/* ======================================= */
+
+/* ======================================= */
+
+/* ============responsive for mobile====== */
+
+@media only screen and (max-width: 660px) {
+    .top-section{
+        justify-content: center;
+    }
+
+    .bottom-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .bottom-section-left{
+        text-align: center;
+    }
+    .bottom-section-right{
+        text-align: center;
+    }
+
+    .logo-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 0px;
+    }
+
+    .popular-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+    .feature-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
