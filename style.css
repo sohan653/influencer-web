@@ -17,7 +17,7 @@ body{
 /* =========header section start=========== */
 header{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     /* height: 100vh; */
 }
 
@@ -34,10 +34,10 @@ header{
   
    display: flex;
    align-items: flex-end;
-   padding: 20px 0px;
+   padding: 1.25rem 0rem;
 }
 .top-section h3{
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .bottom-section{
@@ -46,28 +46,24 @@ header{
 }
 
 .bottom-section-left{
-   padding-top: 80px;
-    /* display: flex;
-    flex-direction: column;
-   justify-content: center; */
+   padding-top: 5rem;
 }
 .bottom-section-left h1{
     font-size: 2rem;
 }
 .bottom-section-left p{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:0.625rem 0rem;
     font-size: 1.2rem;
 }
 .button-1{
-    width: 250px;
+    width: 15.625rem;
     border: 0px;
-    padding: 15px 10px;
+    padding: 0.9375rem 0.625rem;
     font-size: 1.2rem;
     color: white;
     background-color: #E02C6D;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     cursor: pointer;
 }
 .bottom-section-left:hover .button-1{
@@ -98,9 +94,9 @@ main{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    border-top: 2px solid rgba(128, 128, 128, 0.842);
-    border-bottom: 2px solid rgba(128, 128, 128, 0.842);
-    margin-bottom: 30px;
+    border-top: 0.125rem solid rgba(128, 128, 128, 0.842);
+    border-bottom: 0.125rem solid rgba(128, 128, 128, 0.842);
+    margin-bottom: 1.875rem;
 }
 .logo-container div{
     display: flex;
@@ -117,7 +113,7 @@ main{
 /* =============popular card start======= */
 .center-heading{
     text-align: center;
-    padding-bottom: 60px ;
+    padding-bottom: 3.75rem ;
 }
 .popular-container{
     width: 75%;
@@ -125,11 +121,11 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
 }
 .popular-card{
     background-color: white;
-    padding: 15px;
+    padding: 0.9375rem;
     border-radius: 10px;
 }
 .popular-card img{
@@ -141,34 +137,34 @@ main{
     font-size: 1.8rem;
     font-weight: 500;
     color:rgba(0, 0, 0, 0.918);
-    padding-top: 8px;
+    padding-top: 0.5rem;
 }
 
 .popular-card p{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.534);
 }
 .popular-card .price{
-    font-size: 30px;
+    font-size: 1.875rem;
     color:rgba(0, 0, 0, 0.774);
     font-weight: 400;
 }
 .rating{
     display: flex;
-    font-size: 10px;
+    font-size: 0.625rem;
   
    
 }
 .rating div:first-child{
    color: rgb(221, 206, 206);
-    padding-right: 14px;
+    padding-right: 0.875rem;
     display: flex;
     align-items: center;
 }
 
 .rating div:last-child{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.808);
 }
@@ -206,6 +202,7 @@ main{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .feature-box-left{
@@ -219,24 +216,29 @@ main{
 }
 .feature-box-left h1{
     font-size: 2.5rem;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 .feature-box-left p{
     font-weight: 600;
     color: rgba(0, 0, 0, 0.637);
-    font-size: 17px;
-    padding-bottom: 20px;
+    font-size: 1.0625rem;
+    padding-bottom: 1.25rem;
 }
+
+.feature-box-right img{
+    width: 100%;
+}
+
 .button-3{
-    width: 120px;
+    width: 7.5rem;
     text-align: left;
     border: 0px;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     cursor: pointer;
-    padding: 10px 0px;
+    padding: 0.625rem 0px;
     color:#E02C6D ;
 }
 /* ==========featurse container  end============ */
@@ -246,7 +248,7 @@ main{
 /* ============footer start==================== */
 
 footer{
-    margin-top: 30px;
+    margin-top:1.875rem;
     width: 100%;
     background-color: black;
 }
@@ -290,9 +292,7 @@ footer{
 /* ============responsive for mobile====== */
 
 @media only screen and (max-width: 660px) {
-    .header-container{
-        height: 100vh;
-    }
+    
     .top-section{
         justify-content: center;
     }
@@ -305,11 +305,9 @@ footer{
 
     .bottom-section-left{
         text-align: center;
-        background-color: red;
     }
     .bottom-section-right{
         text-align: center;
-        background-color: green;
     }
 
     .logo-container{
@@ -324,7 +322,7 @@ footer{
     }
     .feature-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
     }
 }
 /* ======================================== */
